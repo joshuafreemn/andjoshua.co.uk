@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+/* Base Styling */
+html {
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 3vh;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h2 {
+  font-family: 'DM Mono', monospace;
+	font-weight: 500;
+	font-size: 3vh;
+  margin: 0;
+
+}
+
+h3 {
+  font-family: 'DM Mono', monospace;
+	font-weight: 500;
+	font-size: 2vh;
+  margin: 0
+}
+
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  color: #636466;
+}
+
+p {
+  font-family: 'Monserrat', sans-serif;
+	font-weight: 700;
+  font-size: 16px;
+  color: #7a7a7a;
+}
+
+a {
+	text-decoration: none;	color: black;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+header {
+  background: #C0E6F1;
+}
+
+.container {
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  background: #C0E6F1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: drop-shadow(20px 30px 20px rgba(0, 0, 0, 0.25));
+  border-radius: 0px 0px 15px 15px;
+  overflow: hidden;
+}
+
+.logo {
+  padding-top: 30px;
+  justify-self: center;
+  height: 15vw;
+}
+
+.penguinIce {
+  width: 110vw;
+  transform: translate(0, -50px);
+}
+
+.responsive-video {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+  justify-self: center;
+}
+
+.responsive-video iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
