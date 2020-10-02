@@ -1,7 +1,7 @@
 # portfolio
 repo for my portfolio website: www.andjoshua.co.uk
 
-<h2> lil about me: </h2>
+<h3> lil about me </h3> 
   so i've just graduated university, with an advertising degree.
   i had a couple bits of work that i wanted to showcase from the degree, hense the need for the website.
   However, since i've started coding i realsied that it's wicked.
