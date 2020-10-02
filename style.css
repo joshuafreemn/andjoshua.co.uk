@@ -1,0 +1,331 @@
+@charset "UTF-8";
+
+/* Base Styling */
+
+html {
+	padding: 20px;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  font-weight: 900;
+  text-transform: uppercase;
+	margin: 0;
+}
+
+h2 {
+  font-family: 'DM Mono', monospace;
+	font-weight: 500;
+	font-size: 5vw;
+	margin: 0;
+}
+
+h3 {
+  font-family: 'DM Mono', monospace;
+	font-weight: 500;
+	font-size: 4vw;
+	margin: 0;
+}
+
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  color: #636466;
+	font-size: 4vw;
+	margin: 0;
+	text-align: justify;
+}
+
+p {
+  font-family: 'Monserrat', sans-serif;
+	font-weight: 700;
+  font-size: 3vw;
+  color: #7a7a7a;
+	text-justify: none;
+	text-align: justify;
+}
+
+a {
+	text-decoration: none;	color: black;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+header {
+	padding-bottom: 20px;
+}
+
+.andjoshua {
+	display: grid;
+	justify-items: center;
+}
+
+.container {
+		display: grid;
+		margin-bottom: 20px;
+		height: 100vh;
+		grid-gap: 40px;
+		grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+		align-items: center;
+}
+
+.card {
+	padding: 20px;
+	filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.25));
+	border-radius: 15px;
+	height: 30vh;
+	background: #e3e3e3;
+}
+
+.about {
+	background-image: url("assets/computer.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.work {
+	background-image: url("assets/fun.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.call {
+	background-image: url("assets/telephone.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+footer {
+	display: grid;
+	justify-items: center;
+	grid-column: 1 / -1;
+}
+
+/* About Styling */
+
+.grid {
+	padding: 10px;
+	display: grid;
+	justify-content: center;
+}
+
+.cv {
+	display: grid;
+	justify-content: center;
+	grid-template-columns: 1fr 2fr;
+	grid-gap: 20px;
+}
+
+.box {
+	padding: 2vh;
+	border-radius: 15px;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.box:hover {
+	transform: scale(1.01);
+}
+
+.headshot {
+	background: url("assets/josh.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	grid-row: 1 / span 2;
+}
+
+.name {
+	align-self: center;
+	grid-row: 1;
+}
+
+.intro {
+	align-self: center;
+	grid-row: 2;
+}
+
+.next {
+	grid-column: 1 / -1;
+}
+
+.skill {
+	grid-column: 1 / -1;
+}
+
+.skill li {
+	list-style: none;
+}
+
+.education {
+	grid-column: 1 / -1;
+}
+
+/* Contact Styling */
+
+.containerCall {
+	display: grid;
+	height: 80vh;
+	align-content: center;
+	justify-content: center;
+}
+
+.contact {
+	grid-column: 2;
+	display: grid;
+	grid-gap: 40px;
+	justify-items: center;
+}
+
+.email {
+	grid-column: span 2;
+}
+
+.atIcon {
+	height: 3vw;
+	width: 3vw;
+	transform: translate(0, 0.5vw);
+}
+
+.social {
+	border-radius: 15px;
+	box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.25);
+	grid-row: 2;
+}
+
+.social img{
+	transform: scale(1.2);
+}
+
+.disc {
+	grid-column: span 2;
+	margin-left: 5vw;
+	margin-right: 5vw;
+}
+
+.disc p {
+	margin: 0;
+}
+
+/* Tablet Styling */
+
+@media screen and (min-width: 956px) {
+
+	.container {
+		display: grid;
+		margin-bottom: 20px;
+		height: 100vh;
+		padding: 0 50px;
+		grid-gap: 80px;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.call {
+		grid-column: 1 / -1;
+	}
+}
+
+/* Desktop Styling */
+
+@media screen and (min-width: 1200px) {
+
+	/* Base Styling */
+		h1 {
+		font-size: 2em;
+		}
+
+		h2 {
+		 font-size: 1.5em;
+		}
+
+		h3 {
+		  font-size: 1.17em;
+		}
+
+		h4 {
+		  font-size: 1em;
+		}
+
+		p {
+		  font-size: 1em;
+		}
+
+		header {
+			padding-bottom: 0;
+		}
+
+		.andjoshua {
+			font-size: 3em;
+			transform: translate(0, 0.7em);
+		}
+
+		.container {
+					display: grid;
+					margin-bottom: 20px;
+					height: 100vh;
+					padding: 0 50px;
+					grid-gap: 80px;
+					grid-template-columns: 1fr 1fr 1fr;
+					grid-template-rows: 1fr;
+					justify-content: center;
+			}
+
+			.card {
+				height: 60vh;
+			}
+
+			.about {
+				grid-column: 1;
+				grid-row: 1;
+			}
+
+			.work {
+				grid-column: 2;
+				grid-row: 1;
+			}
+
+			.call {
+				grid-column: 3;
+				grid-row: 1;
+			}
+
+		/* About Styling */
+			.cv {
+				width: 50vw;
+				grid-auto-flow: dense;
+			}
+
+			.skill {
+				grid-column: auto;
+			}
+
+			.next {
+				grid-column: auto;
+			}
+
+		/* Contact Styling */
+			.containerCall {
+			}
+
+			.contact {
+				width: 30vw;
+			}
+
+			.atIcon {
+				height: 0.8em;
+				Width: 0.8em;
+			}
+
+			.disc {
+				margin-left: 3.5vw;
+				margin-right: 3.5vw;
+			}
+}
