@@ -70,13 +70,32 @@ header {
 
 .logo {
   padding-top: 30px;
+  margin-bottom: 30px;
   justify-self: center;
-  height: 15vw;
+  height: 25vw;
 }
 
-.penguinIce {
-  width: 110vw;
-  transform: translate(0, -50px);
+.objective {
+  justify-self: center;
+  height: 25vw;
+  width: auto;
+  margin-bottom: 30px;
+}
+
+.insight {
+  justify-self: center;
+  height: 40vw;
+  width: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.tag {
+  justify-self: center;
+  height: 25vw;
+  width: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .responsive-video {
@@ -92,4 +111,75 @@ header {
   width: 100%;
   height: 100%;
   border-radius: 15px;
+
+}
+
+/* Credits Styling */
+
+.credits-container {
+  width: auto;
+  height: auto;
+  display: grid;
+  justify-content: center;
+  margin-top: 4vw;
+  margin-bottom: 6vw;
+}
+
+.team {
+  grid-area: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-gap: 10px;
+}
+
+.credits {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  width: 250px;
+}
+
+.credits h1 {
+  height: 500px;
+}
+
+.partner-name {
+  grid-column: 1 / span 3;
+  grid-row: 2;
+  filter: drop-shadow(20px 30px 20px rgba(0, 0, 0, 0.25));
+}
+
+.partner-pic {
+  background: url("assets/brad.jpg");
+  background-size: cover;
+  background-position: top center;
+  grid-column: 1 / span 2;
+  grid-row: 3 / span 3;
+}
+
+.team-and {
+  grid-column: 3 / 4;
+  grid-row: 3;
+  z-index: 2;
+  text-align: top;
+  transform: translate(0,-2vw);
+}
+
+.josh-name {
+  grid-column: 3 / span 3;
+  grid-row: 3;
+  text-align: right;
+}
+.josh-pic {
+  background: url("../../assets/josh.jpeg");
+  background-size: cover;
+  background-position: center center;
+  grid-column: 3 / span 3;
+  grid-row: 4 / span 3;
+}
+
+.cd-name {
+  grid-column: 1 / span 4;
+  grid-row: 7;
+  text-align: right;
 }
